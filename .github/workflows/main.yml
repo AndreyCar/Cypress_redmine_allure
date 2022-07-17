@@ -16,9 +16,3 @@ jobs:
           run: npx cypress run --env allure=true
       - name: Allure  generate
         run: allure generate allure-results
-      - name: Deploy report
-              uses: JamesIves/github-pages-deploy-action@4.1.4
-              if: always()
-              with:
-                  branch: master
-                  folder: ./allure-report
