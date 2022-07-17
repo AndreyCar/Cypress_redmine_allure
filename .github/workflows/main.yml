@@ -13,9 +13,11 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
-          browser: chrome
-          headed: true
-          spec: cypress/e2e/spec.cy.js
+          # browser: chrome
+          # headed: true
+          # spec: cypress/e2e/spec.cy.js
+          build: npm run build
+          start: npm start
       - name: Generate Allure report
               if: always()
               uses: QuintilianoNery/action-allure-report-V2@0.2.0
