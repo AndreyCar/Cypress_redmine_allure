@@ -18,6 +18,3 @@ jobs:
           # spec: cypress/e2e/spec.cy.js
           build: npm run build
           start: npm start
-      - name: Generate Allure report
-              if: always()
-              uses: QuintilianoNery/action-allure-report-V2@0.2.0
