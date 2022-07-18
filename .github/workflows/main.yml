@@ -8,11 +8,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Cypress run
+      - name: Cypress install
         uses: cypress-io/github-action@v4
         with:
           browser: chrome
           runTests: false
+      -name: Cypress run
+        run: npx run test
       - name: Generate Allure report
         run: npx allure generate
       - name: Upload Results
