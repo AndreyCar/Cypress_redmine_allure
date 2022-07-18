@@ -14,5 +14,6 @@ jobs:
           browser: chrome
           headed: true
           run: npx cypress run --env allure=true
-      - name: Allure  generate
-        run: allure generate allure-results
+      - name: Generate Allure report
+              if: always()
+              uses: QuintilianoNery/action-allure-report-V2@0.2.0
