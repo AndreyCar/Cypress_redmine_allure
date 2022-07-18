@@ -5,7 +5,7 @@
   "main": "e2e.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress run with allure": "npx cypress run --env allure=true",
+    "test": "npx cypress run --env allure=true",
     "allure generate": "allure generate",
     "allure open": "allure open"
   },

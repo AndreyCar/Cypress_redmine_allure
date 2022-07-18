@@ -13,7 +13,7 @@ jobs:
         with:
           browser: chrome
           headed: true
-          run: npx cypress run --env allure=true
+          run: npm run test
       - name: Generate Allure report
         run: npx allure generate
       - name: Upload Results
