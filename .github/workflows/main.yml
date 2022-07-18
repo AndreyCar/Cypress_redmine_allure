@@ -21,13 +21,13 @@ jobs:
         if: always()
         with:
           name: allure-results
-          path: allure-results 
+          path: ./${process.cwd()}allure-results 
       - name: Publishing Allure artifact to Github Actions
         uses: actions/upload-artifact@v2
         if: always()
         with:
           name: allure-report
-          path: allure-report
+          path: ./allure-report
       - name: Deploy report
         uses: JamesIves/github-pages-deploy-action@4.1.4
         if: always()
