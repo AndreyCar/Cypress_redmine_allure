@@ -14,3 +14,5 @@ jobs:
           browser: chrome
           headed: true
           run: npx cypress run --env allure=true
+      - name: allure generate
+        run: allure generate
