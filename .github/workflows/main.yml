@@ -15,8 +15,7 @@ jobs:
           headed: true
           run: npx cypress run --env allure=true
       - name: Generate Allure report
-        if: always()
-        uses: QuintilianoNery/action-allure-report-V2@0.2.0
+        run: npx allure generate
       - name: Upload Results
         uses: actions/upload-artifact@v1
         if: always()
