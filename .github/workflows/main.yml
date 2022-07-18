@@ -13,7 +13,7 @@ jobs:
         with:
           browser: chrome
           runTests: false
-      -name: Cypress run
+      - name: Cypress run
         run: npx run test
       - name: Generate Allure report
         run: npx allure generate
