@@ -15,4 +15,4 @@ jobs:
           headed: true
           run: npx cypress run --env allure=true
       - name: allure generate
-        run: allure generate
+        run: npx allure generate
