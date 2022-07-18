@@ -12,7 +12,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           browser: chrome
-          headed: true
+          #headed: true
           run: npm run test
       - name: Generate Allure report
         run: npx allure generate
