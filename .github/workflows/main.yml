@@ -16,3 +16,21 @@ jobs:
           run: npx cypress run --env allure=true
       - name: allure generate
         run: npx allure generate
+      - name: Upload Results
+              uses: actions/upload-artifact@v1
+              if: always()
+              with:
+                  name: allure-results
+                  path: ./reports/allure-results # Name of the folder with allure results
+            - name: Publishing Allure artifact to Github Actions
+              uses: actions/upload-artifact@v2
+              if: always()
+              with:
+                  name: allure-report
+                  path: ./allure-report
+            - name: Deploy report
+              uses: JamesIves/github-pages-deploy-action@4.1.4
+              if: always()
+              with:
+                  branch: master
+                  folder: ./allure-report 
