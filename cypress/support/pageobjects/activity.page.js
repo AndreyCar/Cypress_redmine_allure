@@ -1,28 +1,18 @@
 const Page = require('./page');
 
 class ActivityPage extends Page {
-	acticityType = '#sidebar li [type="checkbox"]';
+	acticityCheckBox = '#sidebar li [type="checkbox"]';
 	submitButton = '[type="submit"]';
 
 	open() {
 		super.open('projects/redmine/activity');
 	}
 
-	disableActicityTypes() {
-		this.getElement(this.acticityType).each(($el, index, $list) => {
-			cy.wrap($el)
-				.invoke('prop', 'checked')
-				.then((state) => {
-					if (state) cy.wrap($el).click();
-				});
-		});
+	acticityCheckBoxClick(index) {
+		this.getElement(this.acticityCheckBox).eq(index).click();
 	}
 
-	acticityTypeClick(index) {
-		this.getElement(this.acticityType).eq(index).click();
-	}
-
-    submitButtonClick(index) {
+    submitButtonClick() {
 		this.getElement(this.submitButton).click();
 	}
 }
