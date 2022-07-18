@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Jul 18 15:35:35 UTC 2022","Mon Jul 18 15:37:34 UTC 2022","119580","","Issues status filter ","","","","should check if the correct status is displayed when the status changes",""
-"passed","Mon Jul 18 15:34:59 UTC 2022","Mon Jul 18 15:35:22 UTC 2022","22997","","Closed issues","","","","should check if the defect closed issue is closed",""
-"passed","Mon Jul 18 15:34:23 UTC 2022","Mon Jul 18 15:34:47 UTC 2022","23519","","Activity filter","","","","should check if the url contains name of activity",""
+"passed","Mon Jul 18 15:49:37 UTC 2022","Mon Jul 18 15:49:59 UTC 2022","22225","","Activity filter","","","","should check if the url contains name of activity",""
+"passed","Mon Jul 18 15:50:11 UTC 2022","Mon Jul 18 15:50:40 UTC 2022","28369","","Closed issues","","","","should check if the defect closed issue is closed",""
+"passed","Mon Jul 18 15:50:53 UTC 2022","Mon Jul 18 15:53:05 UTC 2022","132263","","Issues status filter ","","","","should check if the correct status is displayed when the status changes",""
