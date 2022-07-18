@@ -3,7 +3,7 @@ const IssuesPage = require('../support/pageobjects/issues.page');
 
 beforeEach(() => {
 	RoadMapPage.open();
-	RoadMapPage.disableCheckBoxFilter(RoadMapPage.roadMapCheckBox);
+	cy.disableCheckBoxFilter(RoadMapPage.roadMapCheckBox);
 });
 
 describe('Closed issues', () => {

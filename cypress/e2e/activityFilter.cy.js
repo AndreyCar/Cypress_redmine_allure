@@ -2,7 +2,7 @@ const ActivityPage = require('../support/pageobjects/activity.page');
 
 beforeEach(() => {
 	ActivityPage.open();
-	ActivityPage.disableCheckBoxFilter(ActivityPage.acticityCheckBox);
+	cy.disableCheckBoxFilter(ActivityPage.acticityCheckBox);
 });
 
 describe('Activity filter', () => {

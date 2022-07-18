@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('disableCheckBoxFilter', (element) => {
+	cy.get(element).each(($el, index, $list) => {
+		cy.wrap($el)
+			.invoke('prop', 'checked')
+			.then((state) => {
+				if (state) $el.click();
+			});
+	});
+});
