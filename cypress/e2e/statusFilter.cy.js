@@ -10,7 +10,7 @@ describe('Issues status filter ', () => {
 			cy.wrap($el)
 				.invoke('prop', 'value')
 				.then((operatorValue) => {
-					IssuesPage.statusOperatorListSelect(operatorValue);
+					IssuesPage.statusOperatorInputSelect(operatorValue);
 					IssuesPage.apllyeButtonClick();
 					IssuesPage.checkStatus(operatorValue);
 				});
